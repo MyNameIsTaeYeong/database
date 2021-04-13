@@ -21,7 +21,23 @@
 
 >## 1.3 View of Data
 >데이터베이스 시스템의 주요 목적 중 하나는 사용자에게 추상화된 데이터의 관점을 제공하는 것.
->>Data Abstraction
+>>### Data Abstraction
 >>-  Physical level : 데이터가 어떻게 저장되는지 묘사하는 단계.
 >>-  Logical level : 어떤 데이터가 저장되는지, 그들 사이의 관계를 어떤지를 묘사하는 단계.
 >>-  View level : 전체 중 일부만 보여주는 단계. 데이터베이스 시스템과 간단한 상호작용만 존재.
+
+>>### Instances and Schemas
+>>- Instance : 특정 순간에 저장되는 정보집합.
+>>- Schema : 전체적인 데이터베이스 설계.
+
+>## 1.4 Database Languages
+>>- Data-definition language (DDL) : 데이터베이스 스키마와 데이터의 특성을 규정하는 언어.
+>>    - Domain Constraints : 데이터타입 제한.
+>>    - Referential Integrity : 하나의 관계에서 나타나는 값이 다른 관계에서도 동일하게 나타나야 한다.
+>>    - Authorization : 데이터에 대한 권한.
+>>    - DDL의 결과는 Data Dictionary에 보관되고, Data Dictionary는 metadata(데이터에 대한 데이터)를 포함한다.
+>>    - 데이터베이스 시스템은 쓰거나, 수정하기 전에 Data Dictionary를 참고한다.
+>>- Data-Manipulation Language (DML) : 사용자가 만들어진 데이터에 접근하거나 조작하도록 하는 언어.
+
+
+
