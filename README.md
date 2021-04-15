@@ -53,3 +53,8 @@
 > > - Storage Manager : low-level data와 응용프로그램 사이의 interface제공. 여러 역할이 있고, 추후 나옴.
 > > - The Query Processor
 > > - Transaction Management : atomicity(all or nothing) and consistency를 관리하는 것.
+
+> ## 2.2 Database Schema
+> > - relation : 프로그래밍 언어에서 변수.
+> > - relation schema : 프로그래밍 언어에서 타입정의.
+> > - relation instance : 프로그래밍 언어에서 변수의 값.
