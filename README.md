@@ -58,3 +58,11 @@
 > > - relation : 프로그래밍 언어에서 변수.
 > > - relation schema : 프로그래밍 언어에서 타입정의.
 > > - relation instance : 프로그래밍 언어에서 변수의 값.
+
+> ## 2.3 Keys
+> > - superkey :  relation에서 tuple을 구분할 수 있는 하나 또는 그 이상의  특성집합.
+> > - candidate keys : 최소 superkey 집합.
+> > - primary key : relation에서 튜플들을 식별하는 주요 수단으로 선택된 후보키.
+> > - foreign key : 한 테이블에서 다른 테이블의 행을 식별할 수 있는 특성. 
+> > - foreign key constraint : foreign key로 설정된 특성은 다른 테이블에서는 primary key여야 한다는 제약.
+> > - referential integrity constraint : 참조하는 테이블의 특성값이 참조되는 테이블의 값으로 존재해야만 한다는 제약.
