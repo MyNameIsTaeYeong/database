@@ -66,3 +66,11 @@
 > > - foreign key : 한 테이블에서 다른 테이블의 행을 식별할 수 있는 특성. 
 > > - foreign key constraint : foreign key로 설정된 특성은 다른 테이블에서는 primary key여야 한다는 제약.
 > > - referential integrity constraint : 참조하는 테이블의 특성값이 참조되는 테이블의 값으로 존재해야만 한다는 제약.
+
+> ## 2.6 The Relational Algebra
+> > - The Select Operation
+> > - The Project Operation
+> > - Composition of Relational Operations
+> > - The Cartesian-Product Operation
+> > - The Join Operation
+> > - Set Operations
