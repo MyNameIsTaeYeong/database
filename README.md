@@ -74,3 +74,6 @@
 > > - The Cartesian-Product Operation
 > > - The Join Operation
 > > - Set Operations
+> > - The Assignment Operation
+> > - The Rename Operation
+> 
