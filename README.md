@@ -76,4 +76,15 @@
 > > - Set Operations
 > > - The Assignment Operation
 > > - The Rename Operation
-> 
+
+> ## 3.2 SQL Data Definition
+> DDL은 Data Definition language의 약자로 테이블, 테이블에 대한 정보 등을 지정한다.주요 역할로 테이블의 스키마, 특성의 타입, 무결성 제약, 각 테이블을 관리할 인덱스 집합, 보안과 권한, 물리적 저장구조을 설정한다.
+> ### 3.2.1 Basic Types
+> > - char(n) : 고정길이 n의 문자.
+> > - varchar(n) : 최대 길이 n의 가변문자.
+> > - int
+> > - smallint
+> > - numeric(p,d) : 숫자 개수가 p개인 수를 표현, d는 p의 소수점 아래의 숫자개수.
+> > - real, double precision
+> > - float
+> ### 3.2.2 Basic Schema Definition
