@@ -55,19 +55,22 @@
 > > - Transaction Management : atomicity(all or nothing) and consistency를 관리하는 것.
 
 > ## 2.2 Database Schema
+>
 > > - relation : 프로그래밍 언어에서 변수.
 > > - relation schema : 프로그래밍 언어에서 타입정의.
 > > - relation instance : 프로그래밍 언어에서 변수의 값.
 
 > ## 2.3 Keys
-> > - superkey :  relation에서 tuple을 구분할 수 있는 하나 또는 그 이상의  특성집합.
+>
+> > - superkey : relation에서 tuple을 구분할 수 있는 하나 또는 그 이상의 특성집합.
 > > - candidate keys : 최소 superkey 집합.
 > > - primary key : relation에서 튜플들을 식별하는 주요 수단으로 선택된 후보키.
-> > - foreign key : 한 테이블에서 다른 테이블의 행을 식별할 수 있는 특성. 
+> > - foreign key : 한 테이블에서 다른 테이블의 행을 식별할 수 있는 특성.
 > > - foreign key constraint : foreign key로 설정된 특성은 다른 테이블에서는 primary key여야 한다는 제약.
 > > - referential integrity constraint : 참조하는 테이블의 특성값이 참조되는 테이블의 값으로 존재해야만 한다는 제약.
 
 > ## 2.6 The Relational Algebra
+>
 > > - The Select Operation
 > > - The Project Operation
 > > - Composition of Relational Operations
@@ -78,8 +81,11 @@
 > > - The Rename Operation
 
 > ## 3.2 SQL Data Definition
+>
 > DDL은 Data Definition language의 약자로 테이블, 테이블에 대한 정보 등을 지정한다.주요 역할로 테이블의 스키마, 특성의 타입, 무결성 제약, 각 테이블을 관리할 인덱스 집합, 보안과 권한, 물리적 저장구조을 설정한다.
+>
 > ### 3.2.1 Basic Types
+>
 > > - char(n) : 고정길이 n의 문자.
 > > - varchar(n) : 최대 길이 n의 가변문자.
 > > - int
@@ -87,4 +93,13 @@
 > > - numeric(p,d) : 숫자 개수가 p개인 수를 표현, d는 p의 소수점 아래의 숫자개수.
 > > - real, double precision
 > > - float
+>
 > ### 3.2.2 Basic Schema Definition
+>
+> > - create table
+> > - drop table
+> > - alter table
+
+> ## 3.3 Basic Structure of SQL Queries
+>
+> 기본구조 : select { 특성 } from { 테이블 } where { 조건 }
