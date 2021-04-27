@@ -103,3 +103,9 @@
 > ## 3.3 Basic Structure of SQL Queries
 >
 > 기본구조 : select { 특성 } from { 테이블 } where { 조건 }
+>
+> > - 쿼리의 결과를 명확하게 하는 단계.
+> >
+> > 1. Generate a Cartesian product of the relations listed in the from clause.
+> > 2. Apply the predicates specified in the where clause on the result of Step 1.
+> > 3. For each tuple in the result of Step 2, output the attributes (or results of expressions) specified in the select clause.
