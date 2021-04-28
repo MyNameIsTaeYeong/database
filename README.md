@@ -109,3 +109,13 @@
 > > 1. Generate a Cartesian product of the relations listed in the from clause.
 > > 2. Apply the predicates specified in the where clause on the result of Step 1.
 > > 3. For each tuple in the result of Step 2, output the attributes (or results of expressions) specified in the select clause.
+
+> ## 3.6 Null Value
+>
+> > - true and unknown is unknown.
+> > - false and unknown is false.
+> > - unknown and unknown is unknown.
+> > - true or unknown is true.
+> > - false or unknown is unknown.
+> > - unknown or unknown is unknown.
+> > - not unknown is unknown.
