@@ -119,3 +119,39 @@
 > > - false or unknown is unknown.
 > > - unknown or unknown is unknown.
 > > - not unknown is unknown.
+
+> ## 3.7 Aggregate Functions
+>
+> > : input으로 집합또는 집합들을 받아서 single value를 return해주는 함수. avg, min, max등이 있다.
+>
+> ### 3.7.2 Aggregation with Grouping
+>
+> > : 그룹으로 묶어서 집계하는 방법이다. 이때 group by절에 나타나는 특성은 select절에 올 수 있지만, group by절에 나타나지 않은 특성은 오직 Aggregate function에 인자로 나타나야 한다. 예를 들어<br>
+> >
+> > - ### **select** dept_name, ID, avg(salary)
+> >
+> >   ### **from** instructor
+> >
+> >   ### **group_by** dept_name;
+> >
+> > 이와 같은 쿼리문은 ID특성이 group_by절에 나타나지 않았기 때문에 단독으로 올 수 없다. 왜냐하면 각 그룹에 대한 결과는 튜플 1개이고, 이를 위해 서로 다른 ID들 중에 유일하게 1개의 ID를 정하는 방법이 존재하지 않기 때문이다. 따라서 잘못된 쿼리다.
+>
+> ### 3.7.3 The Having Clause
+>
+> > : 그룹에 적용하는 특성. 위와 같이 having절에 나타나는 특성은 group by절에 나타나거나, aggregate function이어야 한다.
+> >
+> > - ### **select** dept_name, avg(salary)
+> >
+> >   ### **from** instructor
+> >
+> >   ### **group_by** dept_name
+> >
+> >   ### **having** avg(salary) > 42000;
+> >
+> > - 위와 같은 쿼리가 따르는 연산의 순서
+> >
+> > 1. **from** 절로부터 relation을 얻는다.
+> > 2. **where** 절의 조건을 1번의 relation에 적용한다.
+> > 3. **group_by** 를 2번 relation에 적용한다. 이때 각 그룹을 하나의 튜플로 바라본다.
+> > 4. **having** 을 3번 relation에 적용한다.
+> > 5. **select** 을 4번 relation에 적용한다.
