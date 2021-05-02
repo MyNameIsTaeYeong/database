@@ -155,3 +155,19 @@
 > > 3. **group_by** 를 2번 relation에 적용한다. 이때 각 그룹을 하나의 튜플로 바라본다.
 > > 4. **having** 을 3번 relation에 적용한다.
 > > 5. **select** 을 4번 relation에 적용한다.
+
+> ## 3.8 Nested Subqueries
+>
+> ### 3.8.1 Set Membership
+>
+> > - in
+> > - not in
+>
+> ### 3.8.2 Set Comparison
+>
+> > - \> some (subquery) : subquery의 일부보다 크다면.
+> > - \> all (subquery) : subquery의 전부보다 크다면.
+>
+> ### 3.8.3 Test for Empty Relations
+>
+> > - exists(subquery): subquery가 nonempty라면 true를 return
