@@ -161,7 +161,7 @@
 > ### 3.8.1 Set Membership
 >
 > > - A in (subquery): 특성 A가 subquery의 결과에 나타나는지 확인
-> > - A not in (subquery): 특성 A가 subquery의 결과에 나타나는지 않는지 확인.
+> > - A not in (subquery): 특성 A가 subquery의 결과에 나타나지 않는지 확인.
 >
 > ### 3.8.2 Set Comparison
 >
