@@ -170,4 +170,26 @@
 >
 > ### 3.8.3 Test for Empty Relations
 >
-> > - exists(subquery): subquery가 nonempty라면 true를 return
+> > - exists(subquery) : subquery가 nonempty라면 true를 return
+>
+> ### 3.8.4 Test for the Absence of Duplicate Tuples
+>
+> > - unique(subquery) : subquery의 결과에 중복튜플이 있다면 true를, 그렇지 않다면 false를 리턴.
+>
+> ### 3.8.5 Subqueries in the From Clause
+>
+> ```
+> select
+>   name, salary, avg salary
+> from
+>   instructor I1,
+>   lateral(select
+>               avg(salary) as avg salary
+>           from
+>               instructor I2
+>           where
+>               I2.dept_name=I1.dept_name
+>           );
+> ```
+>
+> - from절의 subquery에서는 같은 from절의 다른 relation을 참조할 수 없다. 참조하려면 'lateral'을 붙여야 한다.
