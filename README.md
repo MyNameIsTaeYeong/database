@@ -193,3 +193,39 @@
 > ```
 >
 > - from절의 subquery에서는 같은 from절의 다른 relation을 참조할 수 없다. 참조하려면 'lateral'을 붙여야 한다.
+>
+> ### 3.8.6 The With Clause
+>
+> ```
+> with max_budget(value)
+>   as (select max(budget) from department)
+> ```
+>
+> > - 일시적인 relation을 정의하는 방식. as뒤의 subquery를 value라는 속성을 가지는 max_budget relation이라고 일시적으로 정의.
+>
+> ### 3.8.7 Scalar Subqueries
+>
+> - subquery가 특성 1개를 가진 튜플 1개를 리턴한다면 그것을 Scalar Subqueries라 한다.
+
+> ## 3.9 Modification of the Database
+>
+> ### 3.9.1 Deletion
+>
+> ```
+> delete from R
+> where P;
+> ```
+>
+> ### 3.9.2 Insertion
+>
+> ```
+> insert into R(attributes)
+> values(attribute's values)
+> ```
+>
+> ### 3.9.3 Updates
+>
+> ```
+> update instructor
+> set salary = salary * 1.05;
+> ```
