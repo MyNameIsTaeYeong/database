@@ -231,3 +231,14 @@
 > ```
 
 > ## 4.1 Join Expressions
+>
+> ### 4.1.1 The Natural Join
+>
+> - A natural join B : A와 B 두 relation에서 나타나는 공통된 특성들이 모두 같은 값인 tuple들을 출력한다.
+> - A join B using (a,b) : A와 B 두 relation에서 나타나는 특성 a,b가 같은 값인 tuple들을 출력한다. 특성 c가 공통된 특성일지라도 같은 값일 필요가 없다.
+>
+> ### 4.1.2 Join Conditions
+>
+> - A join B on (conditions) : 조건에 맞는 두 relation의 조인.
+>
+> ### 4.1.3 Outer Joins
