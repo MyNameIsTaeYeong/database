@@ -229,3 +229,5 @@
 > update instructor
 > set salary = salary * 1.05;
 > ```
+
+> ## 4.1 Join Expressions
