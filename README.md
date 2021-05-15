@@ -246,3 +246,26 @@
 > - A left outer join B on (conditions) : conditions에 맞지 않는 A의 tuple들도 출력한다.
 > - A right outer join B on (conditions) : conditions에 맞지 않는 B의 tuple들도 출력한다.
 > - A full outer join B on (conditions) : conditions에 맞지 않는 A와 B의 tuple들도 출력한다.
+
+> ## 4.2 Views
+>
+> - 기존의 관계에서 필요한 특성만 뽑아서 만드는 가상의 관계.
+> - 쿼리의 결과를 계산한다. 이때 미리 계산하여 저장하는 것이 아니라, 가상의관계가 사용될때마다 계산한다. 미리 계산하여 저장하게 되면 기존의 관계에서 변화가 일어났을시에 데이터가 맞지 않는 경우가 생기기 때문이다.
+>
+> ### 4.2.1 View Definition
+>
+> ```
+> create view v as <query expression>;
+> ```
+>
+> - 데이터베이스 시스템은 뷰와 관련된 쿼리를 저장하고 뷰가 사용될때마다 쿼리를 계산한다.
+>
+> ### 4.2.3 Materialized Views
+>
+> - 미리 쿼리의 결과를 계산하여 저장하는 뷰.
+> - 뷰를 사용할때 속도는 굉장히 빠르다. 큰 관계들의 계산을 필요로 하는 뷰를 사용할때 이점이 있다.
+> - 이러한 이점은 저장공간과 최신화를 유지하기위한 오버헤드와 비교하여야 한다.
+>
+> ### 4.2.4 Update of a View
+>
+> - 뷰의 수정은 실제 relation의 수정으로 이어지기 때문에 여러가지 문제가 발생한다.
