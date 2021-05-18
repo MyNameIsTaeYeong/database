@@ -269,3 +269,23 @@
 > ### 4.2.4 Update of a View
 >
 > - 뷰의 수정은 실제 relation의 수정으로 이어지기 때문에 여러가지 문제가 발생한다.
+
+> ## 4.3 Transactions
+>
+> - all or nothing
+> - Commit work : 현재 transaction을 기록한다.
+> - Rollback work : 현재 transaction을 되돌린다.
+
+> ## 4.4 Integrity Constraints
+>
+> ### 4.4.2 Not Null Constraint
+>
+> ### 4.4.3 Unique Constraint
+>
+> ### 4.4.4 The Check Clause
+>
+> - check(P) : 속성 P를 모든 tuple이 만족시켜야 한다.
+>
+> ### 4.4.5 Referential Integrity
+>
+> - 한 테이블에서 나타나는 값이 다른 테이블에서도 나타나야 한다는 제약.
