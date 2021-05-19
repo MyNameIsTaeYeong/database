@@ -289,3 +289,16 @@
 > ### 4.4.5 Referential Integrity
 >
 > - 한 테이블에서 나타나는 값이 다른 테이블에서도 나타나야 한다는 제약.
+> - 참조 무결성 제약이 위반되는 update 또는 delete를 한다면, 일반적으로 위반을 야기하는 행동은 거절된다. 그러나 거절대신 튜플에 변화를주어 제약을 회복하도록 할 수 있다.
+>
+> ```
+> create table course
+>   (...
+>    foreign key(dept_name) references department
+>           on delete cascade
+>           on update cascade,
+>   ...);
+> ```
+>
+> - on delete cascade : department의 특정 부서가 삭제되면, 그 특정 부서를 참조하는 course의 튜플도 삭제한다.
+> - on update cascade : department에 존재하지 않은 dept_name이 course에서 업데이트 된다면, 해당 값을 department에도 업데이트 해준다.
