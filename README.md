@@ -302,3 +302,15 @@
 >
 > - on delete cascade : department의 특정 부서가 삭제되면, 그 특정 부서를 참조하는 course의 튜플도 삭제한다.
 > - on update cascade : department에 존재하지 않은 dept_name이 course에서 업데이트 된다면, 해당 값을 department에도 업데이트 해준다.
+>
+> ### 4.4.6 Assigning Names to Constraints
+>
+> ### 4.4.7 Integrity Constraint Violation During a Transaction
+>
+> - 기본은 단계마다 제약확인을 하는것.
+> - 그러나 첫 단계에는 제약조건을 위반하지만 몇 단계를 완료한 후에 제약조건을 회복하는 경우가 생긴다.
+> - 이러한 상황을 다루기 위해 제약조건을 확인인하는 과정을 transaction이 완료된 후로 연기할 수 있다.
+> - 그러나 많은 데이터베이스구현은 이 부분을 지원하지 않는다.
+> - 따라서 프로그래밍적 테크닉으로 이러한 상황을 다룬다.
+>
+> ## 4.5 SQL Data Types and Schemas
