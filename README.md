@@ -314,3 +314,7 @@
 > - 따라서 프로그래밍적 테크닉으로 이러한 상황을 다룬다.
 >
 > ## 4.5 SQL Data Types and Schemas
+>
+> ### 4.5.8 Schemas, Catalogs, and Environments
+>
+> - 현대 데이터베이스 시스템들은 relation들에 이름을 붙일때, 3단계의 계층을 사용한다. Catalogs - Schemas - relations. 3개중 최소 1개가 다르면 다른 relation이다.
