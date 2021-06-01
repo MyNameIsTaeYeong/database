@@ -318,3 +318,7 @@
 > ### 4.5.8 Schemas, Catalogs, and Environments
 >
 > - 현대 데이터베이스 시스템들은 relation들에 이름을 붙일때, 3단계의 계층을 사용한다. Catalogs - Schemas - relations. 3개중 최소 1개가 다르면 다른 relation이다.
+>
+> ## 4.6 Index Definition in SQL
+>
+> : 목차와 같은 개념. 원하는 데이터를 검색할때, 전체 데이터베이스를 찾는 것이 아니라 해당데이터가 있는 index를 먼저 찾는다.
