@@ -342,3 +342,22 @@
 > >
 > > - Dynamic SQL : 프로그램이 실행되는 동안 SQL query를 수행할 수 있게 한다.
 > > - Embedded SQL : 컴파일 타임에 SQL문이 식별된다.
+>
+> ## 5.2 Functions and Procedures
+>
+> : 개발자가 정의한 함수, 절차가 가지는 이점
+>
+> - 다수의 어플리케이션에서 접근할 수 있다.
+> - 하나의 function,procedure를 수정하면 business rule 전체가 바뀐다. 즉, 데이터베이스에 접근하는 다수의 앱을 일일히 바꿀 필요가 없다.
+>
+> ### 5.2.1 Declaring and Invoking SQL Functions and Procedures
+>
+> : 일반적인 프로그래밍 언어처럼 정의하고 호출한다.
+>
+> ### 5.2.2 Language Constructs for Procedures and Functions
+>
+> : sql이 지원하는 프로그래밍 기능들. 그러나 데이터베이스마다 문법이 다 다르다.
+>
+> ### 5.2.3 External Language Routines
+>
+> : 범용 프로그래밍 언어로 function과 procedure를 정의하고, sql쿼리 등에서 호출을 허용하도록 하는 방법.
