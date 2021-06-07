@@ -361,3 +361,12 @@
 > ### 5.2.3 External Language Routines
 >
 > : 범용 프로그래밍 언어로 function과 procedure를 정의하고, sql쿼리 등에서 호출을 허용하도록 하는 방법.
+>
+> ## 5.3 Triggers
+>
+> : 데이터베이스 event에 대한 side effect
+>
+> - Trigger가 필요한 이유
+>   - event(삽입, 수정, 삭제등)가 발생하기 전후로 제약조건을 만족하도록 사전 또는 사후작업을 할 수 있다.
+> - Trigger를 대체할 기능이 존재한다면 Trigger를 피하는게 최고의 방법이다.
+> - 많은 Trigger들은 적절한 저장된 Procedure의 사용으로 대체될 수 있다.
