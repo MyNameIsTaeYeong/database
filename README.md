@@ -372,3 +372,17 @@
 > - 많은 Trigger들은 적절한 저장된 Procedure의 사용으로 대체될 수 있다.
 >
 > ## 5.4 Recursive Queries
+>
+> ## 5.5 Advanced Aggregation Features
+
+> # Chapter 6 Database Design Using the E-R Model
+>
+> ## 6.1 Overview of the Design Process
+>
+> ### 6.1.1 Design Phases
+>
+> - 유저 요구사항을 지정한다.
+> - conceptual-design phase.데이터 모델을 고르고, 요구사항들을 개념적인 스키마로 옮긴다.이 단계의 목적은 entity-relationship diagram을 만드는 것이다.
+> - specification of functional requirements.
+> - logical-design phase. E-R모델을 사용하요 정의한 개념적 스키마를 관계스키마로 맵핑하는 단계.
+> - physical-design phase. 시스템별 데이터 베이스 스키마를 사용한다.
