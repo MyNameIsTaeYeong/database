@@ -386,3 +386,17 @@
 > - specification of functional requirements.
 > - logical-design phase. E-R모델을 사용하요 정의한 개념적 스키마를 관계스키마로 맵핑하는 단계.
 > - physical-design phase. 시스템별 데이터 베이스 스키마를 사용한다.
+>
+> ## 6.2 The Entity-Relationship Model
+>
+> ### 6.2.1 Entity Sets
+>
+> - entity : 객체
+> - entity set : 객체 집합.
+> - extension of the entity set : entity set에 속한 실제 entity들의 collection을 참조하는 것.
+>
+> ### 6.2.2 Relationship Sets
+>
+> - relationship : 여러 entities사이의 연관.
+> - relationship set : 관계 집합.
+> - degree of the relationship set : 관계집합에 참여하는 entity set의 수
