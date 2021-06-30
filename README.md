@@ -400,3 +400,18 @@
 > - relationship : 여러 entities사이의 연관.
 > - relationship set : 관계 집합.
 > - degree of the relationship set : 관계집합에 참여하는 entity set의 수
+>
+> ## 6.3 Complex Attributes
+>
+> - composite attribute : 여러 특성이 합쳐진 특성.
+> - multivalued attribute : 여러 값을 가지는 특성.
+> - derived attribute : 기존 특성으로 부터 유도되는 특성. 이 특성의 값은 저장되지 않고, 필요할 때 계산한다.
+>
+> ## 6.4 Mapping Cardinalities
+>
+> - one to one
+> - one to many
+> - many to one
+> - many to many
+> - total : entity set의 모든 entity가 relationship을 가질 때.
+> - partial : entity set의 일부 entity가 relationship을 가질 때.
