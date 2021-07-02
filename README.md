@@ -415,3 +415,25 @@
 > - many to many
 > - total : entity set의 모든 entity가 relationship을 가질 때.
 > - partial : entity set의 일부 entity가 relationship을 가질 때.
+>
+> ## 6.5 Primary Key
+>
+> - 이해안됨. 다시 읽어볼 것.
+>
+> ## 6.6 Removing Redundant Attributes in Entity Sets
+>
+> - 중복되는 속성을 없앤다.
+>
+> ## 6.7 Reducing E-R Diagrams to Relational Schemas
+>
+> # 이후 내용 pass
+
+> # Chapter 7 Relational Database Design
+>
+> ## 7.1 Features of Good Relational Designs
+>
+> - 중복되는 정보가 relation에 등장하는 것은 여러 문제가 생긴다. 예들들어 교사와 부서 관계의 조인을 했을 경우, 여러 교사튜플에 같은 부서정보가 중복으로 나타날 수 있다.
+> - 만약 부서의 특성값이 변경되었을때, 그 특성값이 존재하는 모든 튜플에 값을 변경하지 않으면, 정보의 불일치가 생긴다.
+> - 부서의 튜플을 추가하기 위해 교사 튜플에 null값을 넣어야 하는 문제가 생긴다.
+>
+> ### 7.1.1 Decomposition
