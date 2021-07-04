@@ -437,3 +437,24 @@
 > - 부서의 튜플을 추가하기 위해 교사 튜플에 null값을 넣어야 하는 문제가 생긴다.
 >
 > ### 7.1.1 Decomposition
+>
+> - relation을 분해하는 것.
+> - 분해의 결과가 중요한 사실들을 나타낼 수 없을 때, lossy decompositions
+> - 분해의 결과가 중요한 사실들을 나타낼 수 있을 때, lossless decompositions
+>
+> ### 7.1.2 Lossless Decomposition
+>
+> - 관계 R이 R_1, R_2로 분해될 때, R의 관한 정보를 R_1, R_2로 표현할 수 있을 때 lossless decomposition이라고 한다. 즉, 관계 R이 아래의 쿼리의 결과와 같은 튜플들의 집합을 포함할 때이다.
+>
+> ```
+> select *
+> from (select R_1 from r)
+>       natural join
+>      (select R_2 from r)
+> ```
+>
+> ## 7.2 Decomposition Using Functional Dependencies
+>
+> ### 7.2.2 Keys and Functional Dependencies
+>
+> - functional dependency α → β : t1[α] = t2[α] -> t1[β] = t2[β].
