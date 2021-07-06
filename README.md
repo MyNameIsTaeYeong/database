@@ -458,3 +458,10 @@
 > ### 7.2.2 Keys and Functional Dependencies
 >
 > - functional dependency α → β : t1[α] = t2[α] -> t1[β] = t2[β].
+> - α는 β에 대한 superKey를 형성한다.
+>
+> ### 7.2.3 Lossless Decomposition and Functional Dependencies
+>
+> - R1 ∩ R2 → R1
+> - R1 ∩ R2 → R2
+> - 위의 조건 중 최소 하나를 만족시키면 R1과 R2로의 분해는 lossless decomposition이다.
