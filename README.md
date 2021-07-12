@@ -465,3 +465,22 @@
 > - R1 ∩ R2 → R1
 > - R1 ∩ R2 → R2
 > - 위의 조건 중 최소 하나를 만족시키면 R1과 R2로의 분해는 lossless decomposition이다.
+>
+> ## 7.3 Normal Forms
+>
+> - 관계형 데이터베이스 설계에 많이 사용되는 형식.
+>
+> ### 7.3.1 Boyce–Codd Normal Form
+>
+> #### 7.3.1.1 Definition
+>
+> : 모든 functional dependencies에 대해 다음 중 적어도 하나가 만족한다면 관계 스키마 R은 BCNF이다.
+>
+> - α → β is a trivial functional dependency (i.e., β ⊆ α).
+> - α is a superkey for schema R.
+> - Rule for decomposing schemas
+>   - R is not in BCNF, α is not a superkey 일 때, R을 두개의 스키마로 나눈다.
+>   - ( α ∪ β )
+>   - ( R − ( β − α ) )
+>
+> #### 7.3.1.2 BCNF and Dependency Preservation
