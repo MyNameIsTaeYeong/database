@@ -457,6 +457,7 @@
 >
 > ### 7.2.2 Keys and Functional Dependencies
 >
+> - 현실세계의 제약들은 key또는 functional dependency로 표현될 수 있다.
 > - functional dependency α → β : t1[α] = t2[α] -> t1[β] = t2[β].
 > - α는 β에 대한 superKey를 형성한다.
 >
@@ -484,3 +485,7 @@
 >   - ( R − ( β − α ) )
 >
 > #### 7.3.1.2 BCNF and Dependency Preservation
+>
+> - 제약을 효율적으로 확인해야 한다. -> 하나의 관계에서 기능 종속성을 고려한다면 효율적이다. -> 그러나 BCNF로의 분해는 효율적인 기능 종속성 테스트를 막는다.(dependency preserving이 되지 않는다.) -> dependency preserving은 바람직한 것으로 고려된다. -> 따라서 dependency preserving이 허용되는 BCNF보다 약한 정규화가 필요한데, 이것이 Third normal form이다.
+>
+> ### 7.3.2 Third Normal Form
