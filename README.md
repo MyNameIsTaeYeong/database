@@ -478,7 +478,7 @@
 > : 모든 functional dependencies에 대해 다음 중 적어도 하나가 만족한다면 관계 스키마 R은 BCNF이다.
 >
 > - α → β is a trivial functional dependency (i.e., β ⊆ α).
-> - α is a superkey for schema R.
+> - if α → β is a nontrivial functional dependency, α is a superkey for schema R.
 > - Rule for decomposing schemas
 >   - R is not in BCNF, α is not a superkey 일 때, R을 두개의 스키마로 나눈다.
 >   - ( α ∪ β )
@@ -489,3 +489,15 @@
 > - 제약을 효율적으로 확인해야 한다. -> 하나의 관계에서 기능 종속성을 고려한다면 효율적이다. -> 그러나 BCNF로의 분해는 효율적인 기능 종속성 테스트를 막는다.(dependency preserving이 되지 않는다.) -> dependency preserving은 바람직한 것으로 고려된다. -> 따라서 dependency preserving이 허용되는 BCNF보다 약한 정규화가 필요한데, 이것이 Third normal form이다.
 >
 > ### 7.3.2 Third Normal Form
+>
+> : 모든 functional dependencies에 대해 다음 중 적어도 하나가 만족한다면 관계 스키마 R은 third normal form이다.
+>
+> - α → β is a trivial functional dependency.
+> - α is a superkey for R.
+> - Each attribute A in β − α is contained in a candidate key for R.
+>
+> ## 7.4 Functional-Dependency Theory
+>
+> ### 7.4.1 Closure of a Set of Functional Dependencies
+>
+> - closure : F에 의해 논리적으로 내포하는 모든 functional dependencies. denoted by F+
