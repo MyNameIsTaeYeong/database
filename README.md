@@ -501,3 +501,17 @@
 > ### 7.4.1 Closure of a Set of Functional Dependencies
 >
 > - closure : F에 의해 논리적으로 내포하는 모든 functional dependencies. denoted by F+
+> - Armstrong's axioms : F의 closure를 유도하는데 사용되는 공리.
+>   - Reflexivity rule : If α is a set of attributes and β ⊆ α, then α → β holds.
+>   - Augmentation rule : If α → β holds and γ is a set of attributes, then γα → γβ
+>     holds.
+>   - Transitivity rule : If α → β holds and β → γ holds,then α → γ holds.
+> - Armstrong’s axioms로 유도가능한 additional rules.
+>   - Union rule : If α → β holds and α → γ holds,then α → βγ holds.
+>   - Decomposition rule : If α → βγ holds,then α → β holds and α → γ holds.
+>   - Pseudotransitivity rule : If α → β holds and γβ → δ holds,then αγ → δ holds.
+>
+> ### 7.4.2 Closure of Attribute Sets
+>
+> - B is functionally determined by α if α → B.
+> - 기능 종속성 집합 F 아래에서 α에 의해 결정되는 모든 특성집합을 The closure of α under F라 한다. α+로 표기한다.
