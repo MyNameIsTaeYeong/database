@@ -515,3 +515,9 @@
 >
 > - B is functionally determined by α if α → B.
 > - 기능 종속성 집합 F 아래에서 α에 의해 결정되는 모든 특성집합을 The closure of α under F라 한다. α+로 표기한다.
+> - The Attribute closure의 사용
+>   - α가 superkey인지 아닌지를 테스트 할 수 있다. 만약 α+가 모든 특성들을 포함한다면 α는 superkey이다.
+>   - 함수 종속성 α → β가 성립하는지 확인할 수 있다. 만약 α+안에 β가 존재한다면 α → β는 성립한다.
+>   - The closure of functional dependencies(F+)를 찾는 대안이 된다. R에 있는 모든 특성들에 대하여 closure를 구하고 union연산을 하면 F+이다.
+>
+> ### 7.4.3 Canonical Cover
