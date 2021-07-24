@@ -521,3 +521,12 @@
 >   - The closure of functional dependencies(F+)를 찾는 대안이 된다. R에 있는 모든 특성들에 대하여 closure를 구하고 union연산을 하면 F+이다.
 >
 > ### 7.4.3 Canonical Cover
+>
+> - Removal from the left side : Attribute A is extraneous in α if A ∈ α and F logically implies(F−{α→β}) ∪ {(α−A)→β}.
+>   - 방향 주의. (F−{α→β}) ∪ {(α−A)→β} → F는 항상 성립한다. 역방향인거 인지.
+> - Removal from the right side : Attribute A is extraneous in β if A ∈ β and the set of functional dependencies (F − {α → β}) ∪ {α → (β − A)} logically implies F.
+>   - 방향 주의. F -> (F − {α → β}) ∪ {α → (β − A)}는 항사 성립한다. 역방향인거 인지.
+> - A canonical cover Fc for F : A set of dependencies such that F logically implies all dependencies in Fc, and Fc logically implies all dependencies in F. 그리고 2가지 조건을 더 만족해야 한다.
+>   - No functional dependency in Fc contains an extraneous attribute.
+>   - Each left side of a functional dependency in Fc is unique. That is, there are no two dependencies α1 → β1 and α2 → β2 in Fc such that α1 = α2.
+> - 간략화된 Canonical Cover로 제약위반을 확인한다.
