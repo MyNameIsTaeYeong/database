@@ -530,3 +530,20 @@
 >   - No functional dependency in Fc contains an extraneous attribute.
 >   - Each left side of a functional dependency in Fc is unique. That is, there are no two dependencies α1 → β1 and α2 → β2 in Fc such that α1 = α2.
 > - 간략화된 Canonical Cover로 제약위반을 확인한다.
+>
+> ### 7.4.4 Dependency Preservation
+>
+> - The restriction of F to Ri : F+에 있는 모든 함수 종속성에서 오직 Ri의 특성들로만 이루어진 함수 종속성들을 의미한다.
+> - F′ = F1 ∪ F2 ∪ ⋯ ∪ Fn이고, F′+ = F+일 때, 이러한 분해(R을 R1 ~ Rn)를 dependency-preserving decomposition이라고 한다.
+>
+> ## 7.5 Algorithms for Decomposition Using Functional Dependencies
+>
+> ### 7.5.1 BCNF Decomposition
+>
+> #### 7.5.1.1 Testing for BCNF
+>
+> - nontrivial dependency α → β에 대하여 α+를 계산하고, α+에 R의 모든 속성이 포함되는지를 확인한다. 즉 α가 super key인지를 확인한다.
+> - F+에 있는 함수종속성을 다 확인하는 것 보다는, F에 있는 함수 종속성이 BCNF를 위반하는지 확인하면 된다. 단, 분해된 관계에 대해서는 성립하지 않는다.
+> - 3번째 방법 이해 안된다. pass
+>
+> #### 7.5.1.2 BCNF Decomposition Algorithm
