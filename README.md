@@ -539,3 +539,20 @@
 > ## 7.5 ~ PASS
 >
 > - 추후 연습문제 풀면서 이해하기
+
+> # Chapter 8 Complex Data Types
+>
+> ## 8.1 Semi-structured Data
+>
+> ### 8.1.2 JSON
+>
+> - 복잡한 데이터의 텍스트 표현. 애플리케이션 사이에서 데이터를 전송하거나, 복잡한 데이터를 저장하는데 널리 사용된다.
+> - key-value map구조를 가진다.
+>
+> ### 8.1.3 XML
+>
+> - 태그사이에 정보를 표현하는 방식.
+>
+> ### 8.1.4 RDF and Knowledge Graphs
+>
+> #### 8.1.4.1 Triple Representation
